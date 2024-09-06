@@ -10,7 +10,7 @@ celery_app = Celery('celery_hello_world',
 aws_access_key = os.getenv("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.getenv("AWS_SECRET_ACCESS_KEY")
 
-broker_url = "sqs://{aws_access_key}:{aws_secret_key}@".format(
+broker_url = "sqs://{aws_access_key}:{aws_secret_key}@localhost:4566".format(
     aws_access_key=aws_access_key, aws_secret_key=aws_secret_key,
 )
 
