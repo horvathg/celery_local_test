@@ -1,0 +1,4 @@
+celery
+boto3
+kombu
+pycurl
